@@ -12,7 +12,7 @@
 # (5) 병렬 처리는 Multiprocessing, asyncio 사용 가능. (선택지 다양함)
 # (6) thread 동시성 완벽 처리를 위해 -> Jython, IronPython, Stackless Python 등이 존재
 
-# 오랜 기간동안 Cpython 을 개발하다 보니, 여러 thread를 사용할 경우
+# 오랜 기간동안 Cpython 을 개발하다 보니, 여러 thread 를 사용할 경우
 # Thread-safe 하지 못하고, 단일 thread 로 충분히 빠르다고 판단하여
 # 단일 thread 만이 Python object 에 접근하도록 제한한 것.
 # 그러나 이는 다른 선택지가 많기 때문에 제약이 되진 않는다.
