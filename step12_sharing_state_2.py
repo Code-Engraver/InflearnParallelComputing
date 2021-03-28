@@ -4,12 +4,8 @@ import os
 
 # 프로세스 메모리 공유 예제(공유o)
 # 실행함수
-# !!! 강의 코드에 문제가 있는 것으로 보여 커뮤니티에 문의한 상태.
-# !!! 해결 시 코드 정리 예정. Lock 을 이용한 코드는 기대한 결과 값이 나옴.
-# def generate_update_number(v: int):
-#     for _ in range(5000):
-#         v.value += 1
-#     print(current_process().name, 'data', v.value)
+# 강의 예제에서는 메모리 공유까지만 구현.
+# 동기화까지 완료한 코드
 def generate_update_number(v: int):
     with v.get_lock():
         for _ in range(5000):
