@@ -29,7 +29,7 @@ def main():
         "https://www.jython.org",
         "http://olympus.realpython.org/dice",
         "https://realpython.com"
-    ] * 3
+    ] * 5
 
     # 실행 시간 측정
     start_time = time.time()
